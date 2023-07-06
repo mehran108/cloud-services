@@ -306,6 +306,7 @@ a {
 .container {
   max-width: 1700px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .ds_flex {
@@ -692,6 +693,10 @@ br.br-block {
   justify-content: space-between;
   align-items: center;
 }
+
+.client_logos li{
+  margin: 5px;
+}
 .trusted_brands {
   color: #a6aaae;
   font-size: 18px;
@@ -717,7 +722,6 @@ br.br-block {
 
 .brand_logo img {
   width: 160px;
-  height: 45px;
 }
 .appi-blue-wht-logo {
   display: block;
@@ -1344,9 +1348,7 @@ border-color: #fff;
 
 .career span {
   background-color: #f07652;
-  position: absolute;
-  right: -30px;
-  top: 8px;
+  margin-left: 20px;
   border-radius: 8px;
   padding: 4px 8px;
   font-size: 10px;
@@ -1473,6 +1475,9 @@ padding: 4rem 0 0;
 }
 .faq_grid_panel .faq_col {
   padding-bottom: 0;
+}
+.faq_grid_panel .faq_col .clearfix{
+  padding: 20px;
 }
 .sec_gap {
 margin: 0 0 5rem;

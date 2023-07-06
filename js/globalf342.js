@@ -69,22 +69,31 @@ function add_fields(ctaname) {
 
 
 // Header Mega Menu JS
-$('.tab-link-header').hover(function() {
-  if ($(this).find('a').hasClass('current')) {
-      $(this).find('a').removeClass('current');
-  } else {
-      $(this).find('a').addClass('current');
-  }
-})
+// $('.tab-link-header').hover(function() {
+//   if ($(this).find('a').hasClass('current')) {
+//       $(this).find('a').removeClass('current');
+//   } else {
+//       $(this).find('a').addClass('current');
+//   }
+// })
 
 
-$('.tab-link-header').hover(function() {
-  if ($('.stky_header').hasClass('shrink')) {
-    $('.stky_header').removeClass('shrink');
-  } else {
-    $('.stky_header').addClass('shrink');
-  }
+// $('.tab-link-header').hover(function() {
+//   if ($('.stky_header').hasClass('shrink')) {
+//     $('.stky_header').removeClass('shrink');
+//   } else {
+//     $('.stky_header').addClass('shrink');
+//   }
+// });
+
+$(document).on('ready', function (e) {
+
+  $(".navbar-toggler").on('click', function (e) {
+    $(".offcanvas-collapse").toggleClass('open');
+  });
+
 });
+
 
 
 $(document).on("click", ".naccs .menu div", function() {

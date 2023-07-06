@@ -3102,9 +3102,6 @@ img {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .footer_wrapper {
-    padding: 0 15px;
-  }
   .app-foot-logo img {
     max-width: 200px;
   }
@@ -3194,9 +3191,6 @@ img {
     -webkit-transition: 0.4s;
     position: relative;
   }
-  .stky_header .container {
-    display: none;
-  }
   #mob-header {
     background: #fff;
     width: 100%;
@@ -3204,14 +3198,12 @@ img {
   }
   .stky_header {
     position: fixed;
-    background: #fff;
     width: 100%;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99999;
     padding: 0;
-    height: 90px;
     transition-timing-function: ease-in-out;
     transition: 0.4s;
     -webkit-transition: 0.4s;
