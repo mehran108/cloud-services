@@ -2,18 +2,249 @@
 .p-megamenu {
   border-radius: 0px !important;
 }
+
 .video-wrapper__video {
   width: 100%;
 }
-  .orientation-left {
-      display: flex;
 
-      .p-tabview-nav {
-          flex-direction: column;
-          width: 100%;
-      }
+.orientation-left {
+  display: flex;
 
-      .p-tabview-panels {
-          width: 100%; // to have content take up remainder of space
-      }
+  .p-tabview-nav {
+    flex-direction: column;
+    width: 100%;
   }
+
+  .p-tabview-panels {
+    width: 100%; // to have content take up remainder of space
+  }
+}
+
+.bg_wrapper {
+  background-color: #000;
+  padding: 5rem 0;
+  margin-top: -1px;
+}
+
+.heading2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: 1200px) {
+    font-size: 60px;
+  }
+}
+
+.app__subhead {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+
+  @media (min-width: 1200px) {
+    font-size: 22px;
+  }
+}
+
+.ds_flex {
+  display: flex;
+}
+.flex_spc_btw {
+  justify-content: space-between;
+}
+
+a,
+img a {
+  text-decoration: none !important;
+  border: 0;
+  outline: 0 !important;
+}
+
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1700px !important;
+  }
+}
+
+
+.dev-services-tabs {
+  display: flex;
+  border: 1px solid #126BFB;
+  border-radius: 25px;
+  margin: 3rem 0 8rem;
+
+  .p-tabview-nav-container {
+    padding: 20px;
+    width: 40%;
+    background-color: #126BFB;
+    border-radius: 20px 0 0 20px;
+
+    @media (min-width: 992px) {
+      padding: 100px 60px;
+    }
+  }
+
+  &.p-tabview .p-tabview-nav {
+    background: transparent;
+    border: none;
+  }
+
+  &.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #89B5FD;
+    border-radius: 0;
+    background: transparent;
+    color: #89B5FD;
+
+    @media (min-width: 992px) {
+      font-size: 24px;
+      padding: 35px 0;
+    }
+  }
+
+  &.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: transparent;
+    border-color: #89B5FD;
+    color: #fff;
+  }
+
+  &.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none;
+  }
+
+  &.p-tabview .p-tabview-panels {
+    width: 60% !important;
+    position: relative;
+    padding: 100px 20px;
+    background: #000;
+    border-radius: 0 20px 20px 0 !important;
+    color: #fff;
+
+    @media (min-width: 992px) {
+      padding: 100px 100px 80px 50px;
+    }
+  }
+
+  .p-panel {
+    padding: 0 0 15px 0 !important;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(141, 141, 141, 0.5);
+
+    @media (min-width: 992px) {
+      padding: 0 0 25px 0 !important;
+      margin-bottom: 25px;
+    }
+  }
+
+  .p-panel .p-panel-header .p-panel-title {
+    font-size: 14px;
+
+    @media (min-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  .p-panel .p-panel-header {
+    padding: 0 !important;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0;
+  }
+
+  .p-panel .p-panel-content {
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+
+.dev-experties {
+  padding: 5rem 0 7rem;
+  position: relative;
+  overflow: hidden;
+
+  .parter_tab_panel {
+    padding: 4rem 0 0;
+    position: relative;
+    z-index: 2;
+
+    &.p-tabview .p-tabview-nav {
+      background: transparent;
+      border: none;
+    }
+
+    &.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+      color: #fff;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+      outline: 0 none;
+      outline-offset: 0;
+      box-shadow: none
+    }
+
+    &.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+      border-radius: 0;
+      background: transparent;
+      border: none;
+      color: #868892;
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      padding-left: 1rem;
+    padding-bottom: 50px;
+    cursor: pointer;
+    font-size: 20px;
+      font-weight: 600;
+      line-height: 1.4;
+      @media (min-width: 992px){
+        padding-left: 2rem;
+        padding-bottom: 95px;
+        cursor: pointer;
+        font-size: 28px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 50%;
+        opacity: 0;
+      }
+    }
+    &.p-tabview .p-tabview-panels{
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      width: 70%;
+      padding-left: 10px;
+    }
+
+    .p-tabview-nav-container {
+      width: 30%;
+    }
+  }
+}
+
+

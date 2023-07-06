@@ -12,3 +12,68 @@
       }
   }
 }
+
+
+
+.serv_icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    figure {
+        border-radius: 10px;
+        background-image: linear-gradient(to bottom, #23C0F8, #1FA0F7, #186DF6, #1140F5, #0904F4);
+        width: 57px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+    }
+}
+
+.port__left .port_logo .heading3, .serv_card_head {
+    font-size: 18px;
+    @media (min-width: 992px){
+        font-size: 28px;
+      }
+}
+.serv_card_head {
+    color: #fff;
+    font-weight: 600;
+}
+.card_para {
+    color: #fff;
+    display: block;
+    margin: 20px 0;
+    font-size: 14px;
+    @media (min-width: 992px){
+        font-size: 18px;
+      }
+}
+
+.accor_content .para {
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 0 10px 40px;
+}
+
+.scroll_list {
+    overflow-y: scroll;
+    height: 180px;
+    padding-right: 80px;
+}
+
+.scroll_list::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #6D6B70;
+}
+.scroll_list::-webkit-scrollbar-thumb {
+    background-color: #BCE0FF;
+}
+.scrollle_content::-webkit-scrollbar, .scroll_list::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 2px;
+}

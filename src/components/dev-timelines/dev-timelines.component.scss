@@ -1,0 +1,77 @@
+.cloud_cta_banner {
+    background: url("../../assets/images/devops-get-started-cta-banner.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    height: 600px;
+    margin: 6rem 0 3rem;
+    position: relative;
+    z-index: 2;
+    @media (min-width: 768px){
+        height: 493px;  
+    }
+}
+
+.cta_banner_txt {
+    position: absolute;
+    transform: translate(0 , -50%);
+    left: 20px;
+    top: 50%;
+    @media (min-width: 768px){
+        transform: translate(30px , -50%);
+    }
+    .heading3 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.2;
+        @media (min-width: 992px){
+            font-size: 45px;
+        }
+    }
+    .app__subhead {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        padding-top: 10px;
+        @media (min-width: 992px){
+            font-size: 22px;
+        }
+    }
+    .common__btn {
+        margin-top: 60px;
+        .btn-effect {
+            position: relative;
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+            border: 2px solid #fff;
+            padding: 14px 50px 14px 25px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .common__btn svg {
+            right: 10px;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke: #fff;
+            width: 18px;
+            position: absolute;
+            height: 18px;
+            stroke-width: 1;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transform: translateX(-5px);
+            -webkit-transform: translateX(-5px);
+            -moz-transform: translateX(-5px);
+            -ms-transform: translateX(-5px);
+            -o-transform: translateX(-5px);
+        }
+    }
+}

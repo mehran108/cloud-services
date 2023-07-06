@@ -1,0 +1,53 @@
+.ellipse1 {
+  position: absolute;
+  left: -25%;
+  top: -210px;
+}
+
+.ellipse2 {
+  position: absolute;
+  right: -25%;
+  top: 0;
+}
+
+.tab_img_wrap,
+.tab_img_wrap+.para {
+  width: 50%;
+}
+
+.tab_img_wrap figure {
+  height: 270px;
+}
+
+.tab_img_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.tab_detl_inner .para {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+  @media (min-width: 992px){
+    margin: 0 0 0 80px;
+    font-size: 20px;
+  }
+}
+
+.heading2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.1;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: 1200px) {
+    font-size: 60px;
+  }
+}

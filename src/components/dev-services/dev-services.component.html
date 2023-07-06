@@ -1,33 +1,191 @@
-<p-tabView styleClass="orientation-left">
-  <p-tabPanel>
+<div class="container">
+  <h2 class="heading2">Our DevOps Development Services </h2>
+  <div class="app__subhead">Our comprehensive DevOps services have a diverse portfolio of use-cases, from
+    consumer-facing systems<br> to enterprise-level applications.</div>
+  <p-tabView styleClass="orientation-left dev-services-tabs">
+    <p-tabPanel>
       <ng-template pTemplate="header">
-          <i class="pi pi-calendar"></i>
-          <span>Header I</span>
+        <i class="pi pi-calendar"></i>
+        <span>DevOps consulting services</span>
       </ng-template>
-      <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-  </p-tabPanel>
-  <p-tabPanel header="Header II">
+      <div class="serv_icon">
+        <figure>
+          <img
+            src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/devops-consulting-services.svg"
+            alt="">
+        </figure>
+      </div>
+      <div class="serv_card_head">DevOps consulting services</div>
+      <p class="card_para">To kickstart your transition, our DevOps consultants conduct a
+        comprehensive analysis of your requirements and help you visualize the results. Our
+        consultants guide you through the entire DevOps process through the perfect blend of
+        best practices and state-of-the-art tools, thus achieving increased frequency and
+        reliability of software releases for your organization. </p>
+      <p-panel [toggler]="'header'" [collapsed]="true" header="01. DevOps roadmap and strategy" [toggleable]="true">
+        <div class="accor_content">
+          <p class="para">Having a well thought out strategy and roadmap is a must for
+            successful DevOps transformation. Our DevOps experts help define the
+            right strategy in a phased approach with measurable outcomes. No matter
+            if your organization is just starting with DevOps or undergoing DevOps
+            transformation, our custom DevOps development services can help lay out
+            the perfect roadmap.</p>
+        </div>
+      </p-panel>
+      <p-panel [toggler]="'header'" [collapsed]="true" header="02. DevOps maturity audits" [toggleable]="true">
+        <div class="accor_content">
+          <p class="para">DevOps is not a destination, it is a journey towards more
+            reliable automation and release pipeline. Through our DevOps maturity
+            audit services, our experts audit the current state of maturity of your
+            DevOps implementation and come up with definite gaps and recommendations
+            for improvements.</p>
+        </div>
+      </p-panel>
+      <p-panel [toggler]="'header'" [collapsed]="true"
+        header="03. Use case-driven platforms, tools, and services advisory" [toggleable]="true">
+        <div class="accor_content">
+          <p class="para">With ever evolving tech stack and numerous options of tools
+            available, it often becomes difficult to make the right choice. Our
+            experts, through their deep experience and expertise, advise on the most
+            relevant tools and tech stack as per your business use cases and
+            constraints.</p>
+        </div>
+      </p-panel>
+    </p-tabPanel>
+    <p-tabPanel header="Header II">
       <ng-template pTemplate="header">
-          <i class="pi pi-user"></i>
-          <span>Header II</span>
+        <i class="pi pi-user"></i>
+        <span>DevOps Professional Services</span>
       </ng-template>
-      <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-          ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
-      </p>
-  </p-tabPanel>
-  <p-tabPanel header="Header III">
+      <div class="serv_icon">
+        <figure>
+          <img
+            src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/devops-professional-services.svg"
+            alt="">
+        </figure>
+      </div>
+      <div class="serv_card_head">DevOps Professional Services</div>
+      <p class="card_para">To succeed in a competitive market, top-notch deployment quality
+        and operations efficiency are critical. Our DevOps professional services can help
+        you get there. Our experts, based on their experience of successfully implementing
+        DevOps practices, are uniquely qualified to help you automate and standardize
+        processes for infrastructure deployment.</p>
+      <div class="scroll_list">
+        <p-panel [toggler]="'header'" [collapsed]="true" header="01. DevOps automation implementation"
+          [toggleable]="true">
+          <div class="accor_content">
+            <p class="para">Our DevOps implementation services include automation of
+              processes, streamlining of delivery pipeline, infrastructure management,
+              orchestration, and deployment. Our experts design and implement an
+              end-to-end DevOps architecture with the right choice of stable and
+              industrialized tools as per the custom requirements of your business.
+            </p>
+          </div>
+        </p-panel>
+        <p-panel [toggler]="'header'" [collapsed]="true" header="02. DevOps CI/CD services" [toggleable]="true">
+          <div class="accor_content">
+            <p class="para">Continuous integration (CI) and continuous delivery (CD)
+              help you leverage the beauty of automation by ensuring a high-quality
+              code, greater transparency of work, faster bug fixes, code refactoring,
+              and iterative work. Our high-end DevOps CI/CD services ensure all this
+              and more for your business by using the industry-best practices, tools,
+              and collaboration techniques.</p>
+          </div>
+        </p-panel>
+        <p-panel [toggler]="'header'" [collapsed]="true" header="03. DevOps for mobile application services"
+          [toggleable]="true">
+          <div class="accor_content">
+            <p class="para">By setting up end-to-end DevOps for mobile applications and
+              related architectures, we enable seamless delivery of your application
+              from start to finish. With our mobile DevOps consulting services, you
+              get numerous benefits in the form of enhanced customer experience,
+              greater innovation, reduced risk, and better quality product.</p>
+          </div>
+        </p-panel>
+        <p-panel [toggler]="'header'" [collapsed]="true"
+          header="04. Microservices management, Kubernetes, and containerization" [toggleable]="true">
+          <div class="accor_content">
+            <p class="para">Kubernetes is a container orchestration system perfect for
+              automating the management, scaling, and deployment of microservice
+              applications. Being a high-end DevOps consulting company, we manage the
+              complete nuances of microservice architectures and do implementation of
+              containerization, Dockers, and Kubernetes along with many other
+              technologies.</p>
+          </div>
+        </p-panel>
+        <p-panel [toggler]="'header'" [collapsed]="true"
+          header="05. Infrastructure automation, configurations, monitoring, and alerting implementations"
+          [toggleable]="true">
+          <div class="accor_content">
+            <p class="para">We implement Infrastructure-as-Code, externalization, and
+              management of configurations. We also implement logging, alerting, and
+              monitoring solutions with Open source and COTS tools, thus ensuring the
+              best and most seamless DevOps transformation for your business.</p>
+          </div>
+        </p-panel>
+        <p-panel [toggler]="'header'" [collapsed]="true" header="06. Engineering modernization with DevOps"
+          [toggleable]="true">
+          <div class="accor_content">
+            <p class="para">We modernize the engineering practices by driving into the
+              culture of DevOps, defining the right approach, and implementing DevOps
+              in a planned way for measurable business benefits.</p>
+          </div>
+        </p-panel>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Header III">
       <ng-template pTemplate="header">
-          <i class="pi pi-search"></i>
-          <span>Header III</span>
-          <i class="pi pi-cog"></i>
+        <i class="pi pi-search"></i>
+        <span>DevSecOps services</span>
+        <i class="pi pi-cog"></i>
       </ng-template>
-      <p>
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-          qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-      </p>
-  </p-tabPanel>
-</p-tabView>
+      <div class="serv_icon">
+        <figure>
+          <img
+            src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/devops-professional-services.svg"
+            alt="">
+        </figure>
+      </div>
+      <div class="serv_card_head">DevSecOps services</div>
+      <p class="card_para">Integrating security into your development process is critical to
+        avoid risk of threats and vulnerabilities. Our DevSecOps consulting and
+        implementation services offer continuous monitoring, assessment, and analysis,
+        identify any loophole in the development process at the earliest and remediate them
+        on priority.</p>
+      <p-panel [toggler]="'header'" [collapsed]="true" header="01. Cloud infrastructure security audit"
+        [toggleable]="true">
+        <div class="accor_content">
+          <p class="para">Being one of the top-most DevOps consulting firms,
+            validating that your security and privacy practices in AWS, Azure, and
+            GCP is one of our main priorities. This is where cloud infrastructure
+            security audit services come into play. Our experts do cloud
+            infrastructure security assessment of web and mobile applications with
+            the help of the latest tools and provide comprehensive reports of
+            findings and recommendations.</p>
+        </div>
+      </p-panel>
+      <p-panel [toggler]="'header'" [collapsed]="true" header="02. Cloud applications automated security audit services"
+        [toggleable]="true">
+        <div class="accor_content">
+          <p class="para">As one of the fastest growing <a href="cloud-services/" target="_blank">cloud
+              service companies</a>, we do automated and tool-driven security
+            scans for your web and mobile applications. Our report provides useful
+            insights, recommendations and industry best practices, thus allowing you
+            to prevent any future attacks.</p>
+        </div>
+      </p-panel>
+      <p-panel [toggler]="'header'" [collapsed]="true" header="03. Cloud security implementation services"
+        [toggleable]="true">
+        <div class="accor_content">
+          <p class="para">Securing the cloud is a complex task that requires a
+            reliable partner to effectively follow best industry practices and
+            execute a fool-proof solution. Appinventiv is well-versed in designing
+            secure cloud solutions by setting up security related tools and services
+            at layers of infrastructure and building/delivering pipelines to produce
+            robust products and platforms.</p>
+        </div>
+      </p-panel>
+    </p-tabPanel>
+  </p-tabView>
+
+
+</div>
