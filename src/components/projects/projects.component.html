@@ -1,1 +1,28 @@
-<app-carousal [numVisible]="1"></app-carousal>
+<div class="benefit_slider_panel">
+  <div class="container">
+    <div class="bnfit_head">
+        <h2 class="heading2">Take A Glimpse At Our <br>Seamless Project Flow</h2>
+        <div class="app__subhead">At Appinventiv, we assist you at every stage of software development.<br>
+            From analyzing your current business processes to providing 24/7<br> support after deployment,
+            we cover you in all ways. Here’s how the usual<br> flow of our projects looks like: </div>
+    </div>
+
+    <p-carousel [value]="products" [autoplayInterval]="5000" [numVisible]="1" [showIndicators]="true"
+      [showNavigators]="false" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+      <ng-template let-product pTemplate="item">
+        <div class="product-item">
+          <div class="product-item-content">
+            <div class=" project-content">
+              <img src="{{ product.image }}" [alt]="product.name"
+                class="product-image" />
+            </div>
+            <div class="project-content-info">
+              <h4>{{ product.name }}</h4>
+              <h5>{{ product.description }}</h5>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+</div>

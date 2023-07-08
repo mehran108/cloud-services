@@ -1,0 +1,19 @@
+.benefit_slider_panel {
+    background-color: #1C1C1E;
+    margin-top: -1px;
+    padding: 6rem 0 7rem;
+}
+
+.bnfit_head {
+    position: absolute;
+    @media (max-width: 991px){
+        position: static;
+        margin-bottom: 50px;
+        .heading2 {
+            font-size: 34px;
+        }
+        .app__subhead {
+            font-size: 16px;
+        }
+    }
+}
