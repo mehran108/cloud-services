@@ -7,6 +7,7 @@ import { MegaMenuItem } from 'primeng/api';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+    sidebarVisible: boolean = false;
   public items!: MegaMenuItem[];
 
   constructor() { }

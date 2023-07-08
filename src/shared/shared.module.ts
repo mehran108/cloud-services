@@ -9,6 +9,7 @@ import { TagModule } from 'primeng/tag';
 import { TabViewModule } from 'primeng/tabview';
 import { PanelModule } from 'primeng/panel';
 import { DialogModule } from 'primeng/dialog';
+import { SidebarModule } from 'primeng/sidebar';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { DialogModule } from 'primeng/dialog';
     TagModule,
     TabViewModule,
     PanelModule,
-    DialogModule
+    DialogModule,
+    SidebarModule
   ],
   exports: [
     MenubarModule,
@@ -32,7 +34,8 @@ import { DialogModule } from 'primeng/dialog';
     TagModule,
     TabViewModule,
     PanelModule,
-    DialogModule
+    DialogModule,
+    SidebarModule
   ],
   declarations: []
 })
