@@ -1,6 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 
+@media (max-width: 1199px) {
+  .p-sidebar {
+    width: 100% !important;
+    right: 0;
+
+    .p-sidebar-header {
+      border-bottom: 1px solid #f2f2f2;
+      padding: 10px;
+    }
+
+    .p-sidebar-content {
+      padding: 0 !important;
+    }
+
+    .menu-wrapper {
+      >ul {
+        flex-direction: column;
+        align-items: flex-start;
+
+        >li {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
 .p-megamenu {
   border-radius: 0px !important;
 }
@@ -105,8 +133,8 @@ img a {
     cursor: pointer;
     border-bottom: 1px solid #89B5FD;
     border-radius: 0;
-    background: transparent;
-    color: #89B5FD;
+    background: transparent !important;
+    color: #89B5FD !important;
 
     @media (min-width: 992px) {
       font-size: 24px;
@@ -115,9 +143,9 @@ img a {
   }
 
   &.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-    background: transparent;
+    background: transparent !important;
     border-color: #89B5FD;
-    color: #fff;
+    color: #fff !important;
   }
 
   &.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
@@ -185,12 +213,12 @@ img a {
     z-index: 2;
 
     &.p-tabview .p-tabview-nav {
-      background: transparent;
+      background: transparent !important;
       border: none;
     }
 
     &.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-      color: #fff;
+      color: #fff !important;
 
       &:before {
         opacity: 1;
@@ -205,9 +233,9 @@ img a {
 
     &.p-tabview .p-tabview-nav li .p-tabview-nav-link {
       border-radius: 0;
-      background: transparent;
+      background: transparent !important;
       border: none;
-      color: #868892;
+      color: #868892 !important;
       display: inline-block;
       position: relative;
       padding: 0;
@@ -483,11 +511,12 @@ img a {
 
 
 .portfolio_info {
-  .ds_flex{
-    @media (max-width: 767px){
+  .ds_flex {
+    @media (max-width: 767px) {
       flex-direction: column;
     }
   }
+
   .port__left {
     width: 760px;
     height: 784px;
@@ -498,12 +527,14 @@ img a {
     flex-direction: column;
     justify-content: center;
     border-radius: 15px 0 0 15px;
-    @media (max-width: 767px){
+
+    @media (max-width: 767px) {
       padding: 20px;
       width: 100%;
       height: auto;
     }
-    @media (max-width: 1200px){
+
+    @media (max-width: 1200px) {
       width: 385px;
       padding: 20px;
     }
@@ -540,7 +571,8 @@ img a {
     display: flex;
     color: #fff;
     padding-bottom: 30px;
-    @media (max-width: 767px){
+
+    @media (max-width: 767px) {
       flex-direction: column;
     }
   }
@@ -567,7 +599,8 @@ img a {
     margin-left: 20px;
     padding-left: 20px;
     border-left: 1px solid #C1C1C1;
-    @media (max-width: 767px){
+
+    @media (max-width: 767px) {
       margin: 0;
       padding: 0;
       border: none;
@@ -592,26 +625,32 @@ img a {
     display: inline-flex;
     align-items: center;
   }
+
   .port__rght {
     width: 760px;
     height: 784px;
     position: relative;
     border-radius: 0 15px 15px 0;
-    @media (max-width: 767px){
+
+    @media (max-width: 767px) {
       width: 100%;
       height: auto;
     }
-    @media (max-width: 1200px){
+
+    @media (max-width: 1200px) {
       width: 385px;
     }
-    img{
+
+    img {
       width: 100%;
-      @media (max-width: 1200px){
+
+      @media (max-width: 1200px) {
         height: 100%;
-        object-fit: cover;  
+        object-fit: cover;
       }
     }
   }
+
   .port__rght::before {
     position: absolute;
     content: "";
@@ -625,5 +664,41 @@ img a {
     z-index: -1;
     filter: blur(75px);
     bottom: 10px;
+  }
+}
+
+.dropdown-wrapper {
+  .p-tabview-nav-container {
+    background: #0092ff;
+  }
+
+  .p-tabview .p-tabview-nav {
+    background: #0092ff;
+    border: none;
+    width: 250px;
+    @media (max-width: 1199px){
+      width: 150px;
+    }
+  }
+
+  .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    margin: 15px 0 15px 60px;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    padding: 18px 10px 18px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 0.8;
+    background: #0092ff;
+    box-shadow: none;
+    border: none;
+    @media (max-width: 1199px){
+      margin: 15px 0 15px 15px;
+    }
+  }
+
+  .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: #fff;
+    color: #0092ff;
   }
 }
