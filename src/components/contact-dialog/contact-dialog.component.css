@@ -48,14 +48,18 @@
   background: #fff;
 }
 .right-head-wrapper {
-  padding: 35px;
+  padding: 5px;
 }
 .right-head-wrapper .heading4 {
   margin: 0;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
 }
 .right-head-wrapper .para {
     margin: 2px 0 0;
     color: grey;
+    text-align: center;
 }
 .contact-grid-left-sec {
   border: 1px solid #e6e6e6;
@@ -161,4 +165,13 @@
 }
 .contact-grid .appi-cta {
   float: right;
+}
+.form-group {
+  display: flex;
+    flex-direction: column;
+}
+.dialog-header {
+  font-size: 22px;
+    color: #000;
+    font-weight: 600;
 }

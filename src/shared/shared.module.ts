@@ -10,6 +10,9 @@ import { TabViewModule } from 'primeng/tabview';
 import { PanelModule } from 'primeng/panel';
 import { DialogModule } from 'primeng/dialog';
 import { SidebarModule } from 'primeng/sidebar';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { MenuModule } from 'primeng/menu';
+import { SlideMenuModule } from 'primeng/slidemenu';
 
 @NgModule({
   imports: [
@@ -23,7 +26,10 @@ import { SidebarModule } from 'primeng/sidebar';
     TabViewModule,
     PanelModule,
     DialogModule,
-    SidebarModule
+    SidebarModule,
+    InputTextareaModule,
+    MenuModule,
+    SlideMenuModule
   ],
   exports: [
     MenubarModule,
@@ -35,7 +41,10 @@ import { SidebarModule } from 'primeng/sidebar';
     TabViewModule,
     PanelModule,
     DialogModule,
-    SidebarModule
+    SidebarModule,
+    InputTextareaModule,
+    MenuModule,
+    SlideMenuModule
   ],
   declarations: []
 })
