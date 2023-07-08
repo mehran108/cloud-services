@@ -258,7 +258,7 @@ ul.footer_list {
 }
 .foot_social_network {
     display: inline-flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0;
     list-style-type: none;
 }

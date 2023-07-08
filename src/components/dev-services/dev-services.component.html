@@ -5,7 +5,6 @@
   <p-tabView styleClass="orientation-left dev-services-tabs">
     <p-tabPanel>
       <ng-template pTemplate="header">
-        <i class="pi pi-calendar"></i>
         <span>DevOps consulting services</span>
       </ng-template>
       <div class="serv_icon">
@@ -21,7 +20,7 @@
         consultants guide you through the entire DevOps process through the perfect blend of
         best practices and state-of-the-art tools, thus achieving increased frequency and
         reliability of software releases for your organization. </p>
-      <p-panel [toggler]="'header'" [collapsed]="true" header="01. DevOps roadmap and strategy" [toggleable]="true">
+      <p-panel [toggler]="'header'" [collapsed]="true" header="01. DevOps roadmap and strategy" [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
         <div class="accor_content">
           <p class="para">Having a well thought out strategy and roadmap is a must for
             successful DevOps transformation. Our DevOps experts help define the
@@ -31,7 +30,7 @@
             the perfect roadmap.</p>
         </div>
       </p-panel>
-      <p-panel [toggler]="'header'" [collapsed]="true" header="02. DevOps maturity audits" [toggleable]="true">
+      <p-panel [toggler]="'header'" [collapsed]="true" header="02. DevOps maturity audits" [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
         <div class="accor_content">
           <p class="para">DevOps is not a destination, it is a journey towards more
             reliable automation and release pipeline. Through our DevOps maturity
@@ -41,7 +40,7 @@
         </div>
       </p-panel>
       <p-panel [toggler]="'header'" [collapsed]="true"
-        header="03. Use case-driven platforms, tools, and services advisory" [toggleable]="true">
+        header="03. Use case-driven platforms, tools, and services advisory" [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
         <div class="accor_content">
           <p class="para">With ever evolving tech stack and numerous options of tools
             available, it often becomes difficult to make the right choice. Our
@@ -53,7 +52,6 @@
     </p-tabPanel>
     <p-tabPanel header="Header II">
       <ng-template pTemplate="header">
-        <i class="pi pi-user"></i>
         <span>DevOps Professional Services</span>
       </ng-template>
       <div class="serv_icon">
@@ -71,7 +69,7 @@
         processes for infrastructure deployment.</p>
       <div class="scroll_list">
         <p-panel [toggler]="'header'" [collapsed]="true" header="01. DevOps automation implementation"
-          [toggleable]="true">
+          [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
           <div class="accor_content">
             <p class="para">Our DevOps implementation services include automation of
               processes, streamlining of delivery pipeline, infrastructure management,
@@ -81,7 +79,7 @@
             </p>
           </div>
         </p-panel>
-        <p-panel [toggler]="'header'" [collapsed]="true" header="02. DevOps CI/CD services" [toggleable]="true">
+        <p-panel [toggler]="'header'" [collapsed]="true" header="02. DevOps CI/CD services" [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
           <div class="accor_content">
             <p class="para">Continuous integration (CI) and continuous delivery (CD)
               help you leverage the beauty of automation by ensuring a high-quality
@@ -92,7 +90,7 @@
           </div>
         </p-panel>
         <p-panel [toggler]="'header'" [collapsed]="true" header="03. DevOps for mobile application services"
-          [toggleable]="true">
+          [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
           <div class="accor_content">
             <p class="para">By setting up end-to-end DevOps for mobile applications and
               related architectures, we enable seamless delivery of your application
@@ -102,7 +100,7 @@
           </div>
         </p-panel>
         <p-panel [toggler]="'header'" [collapsed]="true"
-          header="04. Microservices management, Kubernetes, and containerization" [toggleable]="true">
+          header="04. Microservices management, Kubernetes, and containerization" [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
           <div class="accor_content">
             <p class="para">Kubernetes is a container orchestration system perfect for
               automating the management, scaling, and deployment of microservice
@@ -114,7 +112,7 @@
         </p-panel>
         <p-panel [toggler]="'header'" [collapsed]="true"
           header="05. Infrastructure automation, configurations, monitoring, and alerting implementations"
-          [toggleable]="true">
+          [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
           <div class="accor_content">
             <p class="para">We implement Infrastructure-as-Code, externalization, and
               management of configurations. We also implement logging, alerting, and
@@ -123,7 +121,7 @@
           </div>
         </p-panel>
         <p-panel [toggler]="'header'" [collapsed]="true" header="06. Engineering modernization with DevOps"
-          [toggleable]="true">
+          [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
           <div class="accor_content">
             <p class="para">We modernize the engineering practices by driving into the
               culture of DevOps, defining the right approach, and implementing DevOps
@@ -134,9 +132,7 @@
     </p-tabPanel>
     <p-tabPanel header="Header III">
       <ng-template pTemplate="header">
-        <i class="pi pi-search"></i>
         <span>DevSecOps services</span>
-        <i class="pi pi-cog"></i>
       </ng-template>
       <div class="serv_icon">
         <figure>
@@ -152,7 +148,7 @@
         identify any loophole in the development process at the earliest and remediate them
         on priority.</p>
       <p-panel [toggler]="'header'" [collapsed]="true" header="01. Cloud infrastructure security audit"
-        [toggleable]="true">
+        [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
         <div class="accor_content">
           <p class="para">Being one of the top-most DevOps consulting firms,
             validating that your security and privacy practices in AWS, Azure, and
@@ -164,7 +160,7 @@
         </div>
       </p-panel>
       <p-panel [toggler]="'header'" [collapsed]="true" header="02. Cloud applications automated security audit services"
-        [toggleable]="true">
+        [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
         <div class="accor_content">
           <p class="para">As one of the fastest growing <a href="cloud-services/" target="_blank">cloud
               service companies</a>, we do automated and tool-driven security
@@ -174,11 +170,11 @@
         </div>
       </p-panel>
       <p-panel [toggler]="'header'" [collapsed]="true" header="03. Cloud security implementation services"
-        [toggleable]="true">
+        [toggleable]="true" expandIcon="pi pi-angle-up" collapseIcon="pi pi-angle-down">
         <div class="accor_content">
           <p class="para">Securing the cloud is a complex task that requires a
             reliable partner to effectively follow best industry practices and
-            execute a fool-proof solution. Appinventiv is well-versed in designing
+            execute a fool-proof solution. KeepKloud is well-versed in designing
             secure cloud solutions by setting up security related tools and services
             at layers of infrastructure and building/delivering pipelines to produce
             robust products and platforms.</p>

@@ -22,6 +22,7 @@ import { SliderComponent } from 'src/components/slider/slider.component';
 import { StatsComponent } from 'src/components/stats/stats.component';
 import { CarousalComponent } from 'src/components/carousal/carousal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactDialogComponent } from 'src/components/contact-dialog/contact-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProjectsComponent,
     SliderComponent,
     StatsComponent,
-    CarousalComponent
+    CarousalComponent,
+    ContactDialogComponent
   ],
   imports: [
     BrowserModule,

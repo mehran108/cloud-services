@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevopsToolsComponent implements OnInit {
   activeIndex: number = 0;
+  scrollableTabs: any[] = Array.from({ length: 50 }, (_, i) => ({ title: "Title", content: "Content" }));
   constructor() { }
 
   ngOnInit() {

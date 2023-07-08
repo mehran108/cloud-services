@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
-
+  public visible = false;
   constructor() { }
 
   ngOnInit() {

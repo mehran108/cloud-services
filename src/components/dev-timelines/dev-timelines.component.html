@@ -8,8 +8,7 @@
         Our pool of DevOps services enable on-demand scalability, <br>ensure optimum code efficiency
         and eliminate <br>security breaches.</div>
       <div class="common__btn">
-        <a href="#" class="btn_line btn-effect btn--show-modal"
-          onclick="add_fields('devopspageCtaContactourExperts');"><span>Contact Our Experts</span>
+        <a (click)="visible = true" class="btn_line btn-effect btn--show-modal"><span>Contact Our Experts</span>
           <svg width="13px" height="10px" viewBox="0 0 13 10">
             <polyline points="8 1 12 5 8 9"></polyline>
           </svg>
@@ -19,3 +18,4 @@
   </div>
 
 </div>
+<app-contact-dialog [visible]="visible" (close)="visible = false"></app-contact-dialog>

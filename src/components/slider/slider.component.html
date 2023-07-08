@@ -7,7 +7,7 @@
       <h1 class="heading1">DevOps <br>Services and Solutions</h1>
       <div class="app__subhead">Automate, scale, and modernize product engineering with DevOps</div>
       <div class="common__btn hv_blue">
-        <a href="#" class="btn_line btn-effect btn--show-modal"><span>Consult our experts</span>
+        <a (click)="visible = true" class="btn_line btn-effect btn--show-modal"><span>Consult our experts</span>
           <svg width="13px" height="10px" viewBox="0 0 13 10">
             <polyline points="8 1 12 5 8 9"></polyline>
           </svg>
@@ -31,22 +31,22 @@
       <div class="row">
         <div class="col-6 col-md-3 col-lg-2"><img
             src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/kfc-logo.svg"
-            alt="KFC by Appinventiv"></div>
+            alt="KFC by KeepKloud"></div>
         <div class="col-6 col-md-3 col-lg-2"><img
             src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/kpmg-logo.svg"
-            alt="Kpmgby Appinventiv"></div>
+            alt="Kpmgby KeepKloud"></div>
         <div class="col-6 col-md-3 col-lg-2"><img
             src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/google-logo.svg"
-            alt="Google by Appinventiv"></div>
+            alt="Google by KeepKloud"></div>
         <div class="col-6 col-md-3 col-lg-2"><img
             src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/dominos-logo.svg"
-            alt="Dominos by Appinventiv"></div>
+            alt="Dominos by KeepKloud"></div>
         <div class="col-6 col-md-3 col-lg-2"><img
             src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/bcg-logo.svg"
-            alt="BCG by Appinventiv"></div>
+            alt="BCG by KeepKloud"></div>
         <div class="col-6 col-md-3 col-lg-2"><img
             src="https://appinventiv.com/wp-content/themes/twentynineteen-child/images/americana-logo.svg"
-            alt="Americana by Appinventiv"></div>
+            alt="Americana by KeepKloud"></div>
       </div>
     </div>
   </div>
@@ -74,3 +74,4 @@
   <app-carousal></app-carousal> -->
 
 </div>
+<app-contact-dialog [visible]="visible" (close)="visible = false"></app-contact-dialog>

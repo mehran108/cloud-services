@@ -17,8 +17,7 @@
       </div>
     </div>
     <div class="common__btn blk hv_blue">
-      <a href="#" class="btn_line btn-effect btn--show-modal"
-        onclick="add_fields('devopspageCtaConnectwithus');"><span>Connect With Us</span>
+      <a (click)="visible = true" class="btn_line btn-effect btn--show-modal"><span>Connect With Us</span>
         <svg width="13px" height="10px" viewBox="0 0 13 10">
           <polyline points="8 1 12 5 8 9"></polyline>
         </svg>
@@ -26,3 +25,4 @@
     </div>
   </div>
 </div>
+<app-contact-dialog [visible]="visible" (close)="visible = false"></app-contact-dialog>

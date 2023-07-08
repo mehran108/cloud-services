@@ -6,7 +6,7 @@
       successful<br> DevOps implementation:</p>
   </div>
   <div class="devops-tabs">
-    <p-tabView styleClass="tabview-custom">
+    <p-tabView styleClass="tabview-custom"  [(activeIndex)]="activeIndex" [scrollable]="true">
       <p-tabPanel>
         <ng-template pTemplate="header">
           Configuration Management
@@ -371,7 +371,6 @@
     </p-tabView>
   </div>
 </div>
-
 <div class="container">
   <div class="cl__partners text-center">
     <h2 class="heading2 blk">Our DevOps Partnerships</h2>

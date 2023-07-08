@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dev-timelines.component.scss']
 })
 export class DevTimelinesComponent implements OnInit {
-
+  public visible = false;
   constructor() { }
 
   ngOnInit() {

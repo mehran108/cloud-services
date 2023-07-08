@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+
 .p-megamenu {
   border-radius: 0px !important;
 }
@@ -299,7 +301,7 @@ img a {
     border: none;
     padding: 50px 0 !important;
     margin: 0 20px !important;
-    overflow-x: auto;
+    // overflow-x: auto;
 
     &::-webkit-scrollbar {
       height: 0 !important;
