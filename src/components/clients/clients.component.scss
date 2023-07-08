@@ -6,3 +6,12 @@
         padding: 2rem 0 5rem;
     }
 }
+::ng-deep.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  background: #707070 !important;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+::ng-deep.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: #fff !important;
+}
