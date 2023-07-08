@@ -1,11 +1,49 @@
-<div class="devops-tools">
-  <div class="heading text-center">
-    <h2>See The Impact DevOps Helped Our Clients Bring</h2>
+<div class="client-wrapper">
+  <div class="contianer">
+    <div class="cl_success_stories">
+      <h2 class="heading2 text-center">See The Impact DevOps Helped <br>Our Clients Bring</h2>
+      <div class="app__subhead text-center">Our domain expertise and cross-industry experience help our
+        clients achieve the best business <br> outcomes while making us one of the top-rated
+        &ZeroWidthSpace;&ZeroWidthSpace;cloud
+        computing companies.</div>
+    </div>
+    <p-carousel [value]="products" [autoplayInterval]="5000" [numVisible]="1"
+      [showIndicators]="false" [showNavigators]="false" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+      <ng-template let-product pTemplate="item">
+        <div class="portfolio_info">
+          <div class="ds_flex flex_al_center">
+            <div class="port__left">
+              <div class="port_logo">
+                <figure>
+                  <img src="{{product.image}}"
+                    alt="">
+                </figure>
+              </div>
+              <p class="para">{{product.description}}</p>
+              <div class="port_stats">
+                <div class="states_head">
+                  <span>{{product.states}}</span>
+                  <div class="stats_text">{{product.statesText}} </div>
+                </div>
+                <div class="states_head">
+                  <span>{{product.states1}} </span>
+                  <div class="stats_text">{{product.statesText1}}</div>
+                </div>
+              </div>
+              <div class="common__btn hv_blue">
+                <a href="#" target="_blank" class="btn_line btn-effect"><span>{{product.stateCaseStudy}}</span>
+                  <svg width="13px" height="10px" viewBox="0 0 13 10">
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="port__rght">
+              <img src="{{product.image1}}" alt="">
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </p-carousel>
   </div>
-  <div class="content text-center">
-    Our domain expertise and cross-industry experience help our clients achieve
-    the best business outcomes while making us one of the top-rated ​​cloud
-    computing companies.
-  </div>
-  <app-carousal [numVisible]="2"></app-carousal>
 </div>
