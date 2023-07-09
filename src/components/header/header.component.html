@@ -15,18 +15,20 @@
     <div class="ds_flex flex_spc_btw flex_al_center">
       <div class="brand_logo">
         <a href="">
-          <img style="width: 294px;" [class.d-none]="hovered" src="assets/images/keepkloud-logo-white.png"
+          <img style="width: 294px; margin-left: -90px;" [class.d-none]="hovered" src="assets/images/keepkloud-logo-white.png"
             class="appi-blue-blk-logo" alt="KeepKloud">
-          <img style="width: 294px;" [class.d-block]="hovered" [class.d-none]="!hovered" src="assets/images/keepkloud-logo-black.png"
+          <img style="width: 294px;margin-left: -90px" [class.d-block]="hovered" [class.d-none]="!hovered" src="assets/images/keepkloud-logo-black.png"
             class="appi-blue-wht-logo" alt="KeepKloud">
         </a>
       </div>
       <div class=" d-block d-xl-none">
-        <p-sidebar [(visible)]="sidebarVisible" [fullScreen]="true" 	[blockScroll]="true"
-        styleClass="p-0"
-        appendTo="body">
+        <p-sidebar [(visible)]="sidebarVisible" [fullScreen]="true" 	[blockScroll]="true" styleClass="p-0" appendTo="body">
           <div class="menu-wrapper">
-            <p-slideMenu [model]="items"></p-slideMenu>
+            <p-slideMenu [model]="items">
+              <ng-template pTemplate="header">
+                <span class="dialog-header">Consult Our Experts</span>
+              </ng-template>
+            </p-slideMenu>
           </div>
         </p-sidebar>
         <div (click)="sidebarVisible = true" class="mobile-menu">

@@ -17,8 +17,8 @@
 }
 
 .pop-left {
-  background: url("src/assets/images/vision-img.png") no-repeat;
-  width: 553px;
+  background: url("src/assets/images/vision-img.png") no-repeat center fixed;
+  /* width: 553px; */
   padding: 55px 50px;
   position: relative;
   background-size: cover;
@@ -174,4 +174,112 @@
   font-size: 22px;
     color: #000;
     font-weight: 600;
+}
+
+
+
+.p_wrapper {
+  background: #353b4b;
+  padding: 30px 40px;
+}
+.flex_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  flex-wrap: wrap;
+}
+.flex_wrapper.align_center {
+  align-items: flex-start;
+}
+.flex_wrapper.space_between {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  flex-wrap: wrap;
+  padding: 30px 0 0;
+  justify-content: space-between;
+}
+.p_wrapper .flex_wrapper.space_between {
+  padding: 0;
+  flex-wrap: wrap;
+}
+.p_wrapper_h {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #fff;
+  position: relative;
+  width: 47%;
+  padding-right: 15px;
+}
+.p_wrapper_h:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  border-right: 1px solid #fff;
+  height: calc(100% + 8px);
+}
+.p_wrapper_logos {
+    width: calc(100% - 49%);
+}
+.p_wrapper_logos .flex_wrapper div {
+  /* width: calc(100% / 5); */
+}
+.p_wrapper_logos span {
+  background: url(https://appinventiv.com/wp-content/themes/twentynineteen-child/images/popup-logo-sprite.png) no-repeat;
+  display: block;
+}
+.p_wrapper_logos .l2 span {
+  height: 38px;
+  width: 89px;
+  background-position: -92px -8px;
+  margin-top: -10px;
+}
+.p_wrapper_logos .l1 span {
+  height: 28px;
+  width: 66px;
+  background-position: -16px -17px;
+}
+.p_wrapper_logos .l3 span {
+  height: 28px;
+  width: 66px;
+  background-position: -195px -17px;
+}
+.p_wrapper_logos .l4 span {
+  height: 42px;
+  width: 66px;
+  background-position: -272px -8px;
+  margin-top: -10px;
+}
+.p_wrapper_logos .l5 span {
+  height: 25px;
+  width: 66px;
+  background-position: -337px -21px;
+}
+.p_wrapper_logos .l6 span {
+  height: 28px;
+  width: 65px;
+  background-position: -13px -54px;
+}
+.p_wrapper_logos .l7 span {
+  height: 32px;
+  width: 66px;
+  background-position: -100px -53px;
+}
+.p_wrapper_logos .l8 span {
+  height: 28px;
+  width: 66px;
+  background-position: -195px -54px;
+}
+.p_wrapper_logos .l9 span {
+  height: 32px;
+  width: 66px;
+  background-position: -282px -53px;
+}
+.p_wrapper_logos .l10 span {
+  height: 32px;
+  width: 86px;
+  background-position: -359px -53px;
 }

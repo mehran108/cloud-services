@@ -4263,3 +4263,6 @@ img {
   display: flex;
   justify-content: flex-end;
 }
+::ng-deep.p-slidemenu-rootlist {
+  width: 100% !important;
+}
