@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Carousel } from 'primeng/carousel';
 
 @Component({
   selector: 'app-clients',
@@ -30,11 +31,13 @@ export class ClientsComponent implements OnInit {
       stateCaseStudy: 'View Case Study',
       image1: 'assets/images/ikea-port-banner.png',
     },
-   
+
 ];
 public responsiveOptions!: Array<any>;
 
-  constructor() { }
+  constructor() {
+    Carousel.prototype.onTouchMove = () => { };
+   }
 
   ngOnInit() {
     this.responsiveOptions = [

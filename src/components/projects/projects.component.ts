@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Carousel } from 'primeng/carousel';
 
 @Component({
   selector: 'app-projects',
@@ -36,11 +37,13 @@ export class ProjectsComponent implements OnInit {
         description: 'As one of the fastest growing cloud and DevOps companies, we offer 24/7 end-to-end support to your infrastructures, workloads, and operations. We also help you with real-time incident tracking and resolving support cases, enabling you to take the right actions faster.',
         image: 'assets/images/devops-detail-img4.png',
     },
-   
+
 ];
 public responsiveOptions!: Array<any>;
 
-  constructor() { }
+  constructor() {
+    Carousel.prototype.onTouchMove = () => { };
+  }
 
   ngOnInit() {
     this.responsiveOptions = [
