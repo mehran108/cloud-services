@@ -17,11 +17,14 @@
 }
 
 .pop-left {
-  background: url("src/assets/images/vision-img.png") no-repeat center fixed;
+  background: url("../../assets/images/vision-img.png") no-repeat center fixed;
   /* width: 553px; */
   padding: 55px 50px;
   position: relative;
   background-size: cover;
+  @media (max-width: 992px){
+    padding: 20px;
+  }
 }
 .visiontext_wrapper .heading2 {
   color: #fff;
@@ -29,6 +32,9 @@
   font-weight: 700;
   line-height: 1.1;
   position: relative;
+  @media (max-width: 992px){
+    font-size: 30px;
+  }
 }
 .visiontext_wrapper .heading2 span {
   color: #0092ff;
@@ -42,6 +48,10 @@
   font-weight: 700;
   line-height: 1.3;
   padding: 35px 0;
+  @media (max-width: 992px){
+    padding: 15px 0;
+    font-size: 18px;
+  }
 }
 .pop-right {
   width: 460px;

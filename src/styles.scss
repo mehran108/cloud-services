@@ -1,6 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 @import "primeicons/primeicons.css";
 
+.p-dialog-mask{
+  top: 10px !important;
+}
+
+.btn-popup-wrapper{
+  .p-4{
+    @media (max-width: 1199px){
+      padding: 0 !important;
+    }
+  }
+}
+
+.p-dialog{
+  max-height: 80% !important;
+  @media (max-width: 1199px){
+    width: 90% !important;
+  }
+}
+
 @media (max-width: 1199px) {
   .p-sidebar {
     width: 100% !important;
@@ -402,7 +421,14 @@ img a {
 
 .faqs {
   margin: 5rem 0;
-
+  @media (max-width: 767px) {
+    margin: 3rem 0;
+  }
+  .heading2{
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
   .p-panel-toggleable {
     padding: 20px 10px;
     background: #F1F2FD;
