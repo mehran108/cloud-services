@@ -428,7 +428,8 @@ img a {
       padding: 0;
 
       p {
-        font-size: 18px;
+        margin-right: 20px;
+        font-size: 14px;
         line-height: 1.5;
         font-weight: 400;
         margin: 0 0 20px;
@@ -624,6 +625,7 @@ img a {
     border-radius: 10px;
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
   }
 
   .port__rght {
