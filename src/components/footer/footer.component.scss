@@ -229,10 +229,10 @@ ul.footer_list {
 }
 .statutory-mwrapper, .copy_rght, .foot_social_network {
     width: 33%;
-    @media (max-width: 991px) {
+    @media (max-width: 767px){
       width: 100%;
-      display: flex;
-      justify-content: center;
+      margin-bottom: 15px;
+      text-align: center;
     }
 }
 .statutory-nav a {
@@ -258,6 +258,9 @@ ul.footer_list {
     padding: 0 10px;
     position: relative;
 }
+.copy_rght ul>li a{
+  color: #fff;
+}
 .copy_rght ul>li:first-child {
     border-left: none;
     padding-left: 0;
@@ -267,8 +270,7 @@ ul.footer_list {
     justify-content: flex-end;
     padding: 0;
     list-style-type: none;
-    @media (max-width: 991px) {
-      width: 100%;
+    @media (max-width: 767px){
       justify-content: center;
     }
 }

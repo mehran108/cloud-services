@@ -588,6 +588,9 @@ nav {
   z-index: 9999;
   padding: 20px 0 !important;
   background-color: #000;
+  @media (max-width: 1199px) {
+    padding: 10px 10px 0 0 !important;
+  }
 }
 
 .stky_header:before {
@@ -801,7 +804,6 @@ nav {
 }
 
 .dropdown-wrapper {
-  margin-top: 10px;
   position: fixed;
   left: 0;
   width: 100%;
@@ -859,10 +861,10 @@ nav {
 }
 
 header.stky_header {
-  z-index: 9 !important;
+  z-index: 9999 !important;
 }
 
-/*
+/* 
 
 .overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -1319,6 +1321,10 @@ header.stky_header {
 .e-book-wrapper.abt .right-detail {
   width: calc(100% - 285px);
   padding-left: 50px;
+  @media (max-width: 1199px){
+    padding: 0;
+    width: 100% !important;
+  }
 }
 
 .dropdown-inner .left_icon_wrapper {
@@ -1352,6 +1358,9 @@ header.stky_header {
 .e-book-wrapper {
   background: #f3faff;
   padding: 0 50px;
+  @media (max-width: 1199px){
+    padding: 0 10px;
+  }
 }
 
 .book_wraper {
@@ -1362,6 +1371,10 @@ header.stky_header {
 .e-book-wrapper .right-detail {
   width: calc(100% - 285px);
   padding-left: 25px;
+  @media (max-width: 1199px){
+    padding: 0;
+    width: 100% !important;
+  }
 }
 
 .abt .book_wraper {
@@ -4248,21 +4261,4 @@ img {
     border-radius: 10px;
     margin: 4px 0;
   }
-}
-::ng-deep.p-slidemenu {
-  width: 100% !important;
-}
-::ng-deep.p-slidemenu-wrapper {
-  width: 100% !important;
-  height: 500px !important;
-}
-::ng-deep.p-slidemenu-content  {
-  height: 500px !important;
-}
-::ng-deep.p-slidemenu-backward  {
-  display: flex;
-  justify-content: flex-end;
-}
-::ng-deep.p-slidemenu-rootlist {
-  width: 100% !important;
 }
