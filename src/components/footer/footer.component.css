@@ -229,10 +229,16 @@ ul.footer_list {
 }
 .statutory-mwrapper, .copy_rght, .foot_social_network {
     width: 33%;
+    @media (max-width: 991px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
 }
 .statutory-nav a {
     display: block;
     cursor: pointer;
+    margin-bottom: 5px;
 }
 .copyright .copy, .dmca-wrap, .foot-para, .footer_list li a, .statutory-nav a, .statutory-para {
     font-size: 16px;
@@ -261,6 +267,10 @@ ul.footer_list {
     justify-content: flex-end;
     padding: 0;
     list-style-type: none;
+    @media (max-width: 991px) {
+      width: 100%;
+      justify-content: center;
+    }
 }
 .foot_social_network li {
     margin-left: 10px;
