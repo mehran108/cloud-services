@@ -3,58 +3,105 @@
     <div class="row">
       <div class="col-md-6">
         <div class="heading">
-          <h2>Our DevOps Approach</h2>
+          <h2>Our CloudOps Approach</h2>
         </div>
         <div class="content">
-          Our DevOps approach uses the best CI/CD processes, tools, and practices
-          needed to accelerate the software delivery process. The key elements of
-          the DevOps approach we follow for all our projects include:
+          Our CloudOps approach incorporates the best CI/CD processes, tools,
+          and practices necessary to enhance the software delivery process. The
+          core components of our CloudOps approach, implemented across all our
+          projects, are as follows:
         </div>
-        <div class="common__btn ">
-          <a (click)="visible = true"
-            class="btn_line btn-effect btn--show-modal"><span>Let's Discuss Your Project</span>
+        <div class="common__btn">
+          <a
+            (click)="visible = true"
+            class="btn_line btn-effect btn--show-modal"
+            ><span>Let's Discuss Your Project</span>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
               <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
           </a>
         </div>
       </div>
-      <div class="col-md-6 ">
-       <div class="dev-services-tabs">
-        <p-panel [toggler]="'header'" [collapsed]="true" header="Assessment and planning" [toggleable]="true"  expandIcon="pi pi-arrow-up" collapseIcon="pi pi-arrow-down">
-          <p>
-            We assess the current organizational processes and IT infrastructure and create a comprehensive roadmap for
-            automating the infrastructure.
-          </p>
-        </p-panel>
-        <p-panel [toggler]="'header'" [collapsed]="true" header="Infrastructure automation" [toggleable]="true"  expandIcon="pi pi-arrow-up" collapseIcon="pi pi-arrow-down">
-          <p>
-            We configure build servers, testing, staging, and production environments and automate the complete
-            infrastructure.
-          </p>
-        </p-panel>
-        <p-panel [toggler]="'header'" [collapsed]="true" header="Continuous integration" [toggleable]="true"  expandIcon="pi pi-arrow-up" collapseIcon="pi pi-arrow-down">
-          <p>
-            We merge code changes into a single repository and execute automated builds and test runs every time a team
-            member makes any changes to version control.
-          </p>
-        </p-panel>
-        <p-panel [toggler]="'header'" [collapsed]="true" header="Continuous deployment" [toggleable]="true"  expandIcon="pi pi-arrow-up" collapseIcon="pi pi-arrow-down">
-          <p>
-            As a high-end DevOps services company, we deploy complex applications to the necessary infrastructure
-            requirements and run changes throughout the CI/CD pipeline, preventing any bugs or delays.
-          </p>
-        </p-panel>
-        <p-panel [toggler]="'header'" [collapsed]="true" header="Stringent security protocols" [toggleable]="true"  expandIcon="pi pi-arrow-up" collapseIcon="pi pi-arrow-down">
-          <p>
-            Being the leading DevOps consulting company, we integrate strong security practices right from the start of
-            the project and carry out automated security testing and compliance processes through industry-leading
-            tools.
-          </p>
-        </p-panel>
-       </div>
+      <div class="col-md-6">
+        <div class="dev-services-tabs">
+          <p-panel
+            [toggler]="'header'"
+            [collapsed]="true"
+            header="Assessment and planning"
+            [toggleable]="true"
+            expandIcon="pi pi-arrow-up"
+            collapseIcon="pi pi-arrow-down"
+          >
+            <p>
+              We assess the current organizational processes and IT
+              infrastructure and create a comprehensive roadmap for automating
+              the infrastructure.
+            </p>
+          </p-panel>
+          <p-panel
+            [toggler]="'header'"
+            [collapsed]="true"
+            header="Infrastructure automation"
+            [toggleable]="true"
+            expandIcon="pi pi-arrow-up"
+            collapseIcon="pi pi-arrow-down"
+          >
+            <p>
+              We configure build servers, testing, staging, and production
+              environments and automate the complete infrastructure.
+            </p>
+          </p-panel>
+          <p-panel
+            [toggler]="'header'"
+            [collapsed]="true"
+            header="Continuous integration"
+            [toggleable]="true"
+            expandIcon="pi pi-arrow-up"
+            collapseIcon="pi pi-arrow-down"
+          >
+            <p>
+              We merge code changes into a single repository and execute
+              automated builds and test runs every time a team member makes any
+              changes to version control.
+            </p>
+          </p-panel>
+          <p-panel
+            [toggler]="'header'"
+            [collapsed]="true"
+            header="Continuous deployment"
+            [toggleable]="true"
+            expandIcon="pi pi-arrow-up"
+            collapseIcon="pi pi-arrow-down"
+          >
+            <p>
+              As a high-end CloudOps services company, we deploy complex
+              applications to the necessary infrastructure requirements and run
+              changes throughout the CI/CD pipeline, preventing any bugs or
+              delays.
+            </p>
+          </p-panel>
+          <p-panel
+            [toggler]="'header'"
+            [collapsed]="true"
+            header="Stringent security protocols"
+            [toggleable]="true"
+            expandIcon="pi pi-arrow-up"
+            collapseIcon="pi pi-arrow-down"
+          >
+            <p>
+              Being the leading CloudOps consulting company, we integrate strong
+              security practices right from the start of the project and carry
+              out automated security testing and compliance processes through
+              industry-leading tools.
+            </p>
+          </p-panel>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<app-contact-dialog *ngIf="visible" [visible]="visible" (close)="visible = false"></app-contact-dialog>
+<app-contact-dialog
+  *ngIf="visible"
+  [visible]="visible"
+  (close)="visible = false"
+></app-contact-dialog>
