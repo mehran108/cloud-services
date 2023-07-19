@@ -10,15 +10,15 @@
 </div> -->
 
 <!-- Header -->
-<header class="stky_header nav-down">
+<header class="stky_header nav-down" [ngClass]="color" (mouseover)="color='header-white'" (mouseout)="color='header-black'">
   <div class="container">
     <div class="ds_flex flex_spc_btw flex_al_center align-items-center">
       <div class="brand_logo">
         <a href="">
-          <img style="max-width: 100px;" [class.d-none]="hovered" src="assets/images/keepkloud-logo-white.png"
+          <img style="max-width: 100px;"  src="assets/images/keepkloud-logo-white.png"
+            class=" appi-blue-wht-logo" alt="KeepKloud">
+          <img style="max-width: 100px;" src="assets/images/keepkloud-logo-black.png"
             class="appi-blue-blk-logo" alt="KeepKloud">
-          <img style="max-width: 100px;" [class.d-block]="hovered" [class.d-none]="!hovered" src="assets/images/keepkloud-logo-black.png"
-            class="appi-blue-wht-logo" alt="KeepKloud">
         </a>
       </div>
       <div class=" d-block d-xl-none">

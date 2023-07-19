@@ -7,6 +7,7 @@ import { MegaMenuItem, MenuItem } from 'primeng/api';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+    color:string = 'header-black';
     sidebarVisible: boolean = false;
     hovered = false;
     visible = false;

@@ -13,7 +13,10 @@
   font-weight: 400;
   color: #000;
   margin-bottom: 40px;
-  font-size: 40px;
+  font-size: 30px;
+  @media (min-width: 768px){
+    font-size: 40px;
+  }
   @media (min-width: 992px){
     font-size: 50px;
   }
@@ -51,20 +54,32 @@
 }
 
 .digits span {
-  font-size: 72px;
+  font-size: 50px;
   line-height: .8;
   color: #000;
   font-weight: 700;
   position: relative;
+  @media (min-width: 768px){
+    font-size: 65px;
+  }
+  @media (min-width: 1200px){
+    font-size: 72px;
+  }
 }
 
 .stats-head {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 400;
   color: #000;
   display: block;
   padding-top: 20px;
   line-height: 1.4;
+  @media (min-width: 768px){
+    font-size: 22px;
+  }
+  @media (min-width: 1200px){
+    font-size: 24px;
+  }
 }
 
 .common__btn.blk .btn-effect {

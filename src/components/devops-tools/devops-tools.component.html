@@ -6,29 +6,78 @@
       successful<br> CloudOps implementation:</p>
   </div>
   <div class="devops-tabs">
-    <p-tabView styleClass="tabview-custom"  [(activeIndex)]="activeIndex" [scrollable]="true">
+    <p-tabView styleClass="tabview-custom" [(activeIndex)]="activeIndex" [scrollable]="true">
+      <p-tabPanel>
+        <ng-template pTemplate="header">
+          Cloud Platforms
+        </ng-template>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-aws-logo.svg"
+                  alt="AWS">
+              </figure>
+              <span>AWS</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-azure-logo.svg"
+                  alt="Azure">
+              </figure>
+              <span>Azure</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-google-logo.svg"
+                  alt="Google">
+              </figure>
+              <span>Google</span>
+            </div>
+          </div>
+        </div>
+      </p-tabPanel>
       <p-tabPanel>
         <ng-template pTemplate="header">
           Configuration Management
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-azure-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-google-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-aws-logo.svg"
-                alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/puppet-logo.svg"
+                  alt="Puppet">
+              </figure>
+              <span>Puppet</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/terraform-logo.svg"
+                  alt="Terraform">
+              </figure>
+              <span>Terraform</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/cfengine-logo.svg"
+                  alt="CFEngine">
+              </figure>
+              <span>CFEngine</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/ansible-logo.svg"
+                  alt="Ansible">
+              </figure>
+              <span>Ansible</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/chef-logo.svg"
+                  alt="Chef">
+              </figure>
+              <span>Chef</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
@@ -36,109 +85,101 @@
         <ng-template pTemplate="header">
           Log Management
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/puppet-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/terraform-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/cfengine-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/ansible-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/chef-logo.svg" alt="">
-            </figure>
-          </div>
-        </div>
-      </p-tabPanel>
-      <p-tabPanel>
-        <ng-template pTemplate="header">
-          Performance & Security
-        </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/puppet-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/terraform-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/cfengine-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/ansible-logo.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/chef-logo.svg" alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/new-relic.svg"
+                  alt="New Relic">
+              </figure>
+              <span>New Relic</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/grafana.svg"
+                  alt="Grafana">
+              </figure>
+              <span>Grafana</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/prometheus.svg"
+                  alt="Prometheus">
+              </figure>
+              <span>Prometheus</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/datadog.svg"
+                  alt="Datadog">
+              </figure>
+              <span>Datadog</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/fluentd.svg"
+                  alt="Fluentd">
+              </figure>
+              <span>Fluentd</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/splunk.svg"
+                  alt="Splunk">
+              </figure>
+              <span>Splunk</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
       <p-tabPanel>
         <ng-template pTemplate="header">
-          Cloud Platforms
+          Performance &amp; Security
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/new-relic.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/grafana.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/prometheus.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/datadog.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/fluentd.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/splunk.svg" alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/owasp.svg"
+                  alt="Owasp">
+              </figure>
+              <span>Owasp</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/locust.svg"
+                  alt="Locust">
+              </figure>
+              <span>Locust</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/apache-jmeter.svg"
+                  alt="Jmeter">
+              </figure>
+              <span>Jmeter</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/sonarqube.svg"
+                  alt="Sonarqube">
+              </figure>
+              <span>Sonarqube</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/checkmarx.svg"
+                  alt="Checkmarx">
+              </figure>
+              <span>Checkmarx</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/blazemeter.svg"
+                  alt="Blazemeter">
+              </figure>
+              <span>Blazemeter</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
@@ -146,38 +187,50 @@
         <ng-template pTemplate="header">
           Databases
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/owasp.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/locust.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/apache-jmeter.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/sonarqube.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/checkmarx.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/blazemeter.svg"
-                alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/my-sql-db.svg"
+                  alt="MySql">
+              </figure>
+              <span>MySql</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/mongo-db2.svg"
+                  alt="Mangodb">
+              </figure>
+              <span>Mangodb</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/sql-server-db.svg"
+                  alt="SQLserver">
+              </figure>
+              <span>SQLserver</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/cassandra.svg"
+                  alt="Cassandra">
+              </figure>
+              <span>Cassandra</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/postgre-sql-db.svg"
+                  alt="PostgreSQL">
+              </figure>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/amazon-dynamodb.svg"
+                  alt="Dynamo DB">
+              </figure>
+              <span>Dynamo DB</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
@@ -185,39 +238,43 @@
         <ng-template pTemplate="header">
           Scripting languages
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/my-sql-db.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/mongo-db2.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/sql-server-db.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/cassandra.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/postgre-sql-db.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/amazon-dynamodb.svg"
-                alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/bash-shell.svg"
+                  alt="Bash">
+              </figure>
+              <span>Bash</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/groovy.svg"
+                  alt="Groovy">
+              </figure>
+              <span>Groovy</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/power-shell.svg"
+                  alt="PowerShell">
+              </figure>
+              <span>PowerShell</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/lua-lang.svg"
+                  alt="Lua">
+              </figure>
+              <span>Lua</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/python-language.svg"
+                  alt="python">
+              </figure>
+              <span>python</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
@@ -225,66 +282,85 @@
         <ng-template pTemplate="header">
           Source Code Management
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/bash-shell.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/groovy.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/power-shell.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/lua-lang.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/python-language.svg"
-                alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img
+                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/git-hub-code-mgmt.svg"
+                  alt="Github">
+              </figure>
+              <span>Github</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img
+                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/git-lab-code-mgmt.svg"
+                  alt="Gitlab">
+              </figure>
+              <span>Gitlab</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img
+                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/bit-bucket-code-mgmt.svg"
+                  alt="Bitbucket">
+              </figure>
+              <span>Bitbucket</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tfs-code-mgmt.svg"
+                  alt="TFS">
+              </figure>
+              <span>TFS</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
       <p-tabPanel>
         <ng-template pTemplate="header">
-          Microservices & Architectures Management
+          Microservices &amp; <br>Architectures Management
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/git-hub-code-mgmt.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/git-lab-code-mgmt.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img
-                src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/bit-bucket-code-mgmt.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tfs-code-mgmt.svg"
-                alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/kubernetes.svg"
+                  alt="Kubernetes">
+              </figure>
+              <span>Kubernetes</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/kong.svg"
+                  alt="Kong">
+              </figure>
+              <span>Kong</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/docker.svg"
+                  alt="Docker">
+              </figure>
+              <span>Docker</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/aws-api-gateway.svg"
+                  alt="AWS API">
+              </figure>
+              <span>AWS API
+                Gateway
+              </span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/Istio.svg"
+                  alt="Istio">
+              </figure>
+              <span>Istio</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
@@ -292,78 +368,117 @@
         <ng-template pTemplate="header">
           Build Automation
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/kubernetes.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/kong.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/docker.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/aws-api-gateway.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/lstio.svg" alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/jenkins.svg"
+                  alt="Jenkins">
+              </figure>
+              <span>Jenkins</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/maven.svg"
+                  alt="Maven">
+              </figure>
+              <span>Maven</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/npm-logo.svg"
+                  alt="Npm">
+              </figure>
+              <span>Npm</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/gradle.svg"
+                  alt="Gradle">
+              </figure>
+              <span>Gradle</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img
+                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/git-lab-code-mgmt.svg"
+                  alt="Gitlab">
+              </figure>
+              <span>Gitlab</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/pipelines.svg"
+                  alt="Pipelines">
+              </figure>
+              <span>Pipelines</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img
+                  src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/bit-bucket-code-mgmt.svg"
+                  alt="Bitbuckets">
+              </figure>
+              <span>Bitbucket</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
       <p-tabPanel>
         <ng-template pTemplate="header">
-          Alerting & Monitoring
+          Alerting &amp; Monitoring
         </ng-template>
-        <div class="d-flex align-items-center justify-content-center flex-wrap text-center logo-wrapper">
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/jenkins.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/maven.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/npm-logo.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/gradle.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/git-lab-code-mgmt.svg"
-                alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/pipelines.svg" alt="">
-            </figure>
-          </div>
-          <div class="techstack_logo">
-            <figure>
-              <img
-                src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/bit-bucket-code-mgmt.svg"
-                alt="">
-            </figure>
+        <div class=" logo-wrapper">
+          <div class="grid__panel">
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/zebbix.svg"
+                  alt="Zabbix">
+              </figure>
+              <span>Zabbix</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/nagios.svg"
+                  alt="Nagios">
+              </figure>
+              <span>Nagios</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/new-relic.svg"
+                  alt="New Relic">
+              </figure>
+              <span>New Relic</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/grafana.svg"
+                  alt="Grafana">
+              </figure>
+              <span>Grafana</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/datadog.svg"
+                  alt="Datadog">
+              </figure>
+              <span>Datadog</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/appdynamics.svg"
+                  alt="Appdyanamics">
+              </figure>
+              <span>Appdyanamics</span>
+            </div>
+            <div class="tech__icon">
+              <figure>
+                <img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/dynatrace.svg"
+                  alt="Dynatrace">
+              </figure>
+              <span>Dynatrace</span>
+            </div>
           </div>
         </div>
       </p-tabPanel>
@@ -374,13 +489,16 @@
 <div class="container">
   <div class="cl__partners text-center">
     <h2 class="heading2 blk">Our CloudOps Partnerships</h2>
-    <p class="para">Our partnerships with top industry leaders enable us to efficiently optimize your CloudOps processes and provide comprehensive support throughout your CloudOps transformation journey.
+    <p class="para">Our partnerships with top industry leaders enable us to efficiently optimize your CloudOps processes
+      and provide comprehensive support throughout your CloudOps transformation journey.
     </p>
     <div class="imgtabs">
       <p-tabView styleClass="tabview-custom">
         <p-tabPanel>
           <ng-template pTemplate="header">
-            <span rel="tab-logo1"><img src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-aws-logo.svg" alt=""></span>
+            <span rel="tab-logo1"><img
+                src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-aws-logo.svg"
+                alt=""></span>
           </ng-template>
           <div class="logo_info">
             <h3>Amazon</h3>
@@ -392,8 +510,8 @@
         <p-tabPanel header="Header II">
           <ng-template pTemplate="header">
             <span rel="tab-logo2"><img
-              src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-azure-logo.svg"
-              alt=""></span>
+                src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-azure-logo.svg"
+                alt=""></span>
           </ng-template>
           <div class="logo_info">
             <h3>Microsoft</h3>
@@ -405,8 +523,8 @@
         <p-tabPanel header="Header III">
           <ng-template pTemplate="header">
             <span rel="tab-logo3"><img
-              src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-google-logo.svg"
-              alt=""></span>
+                src="https://appinventiv.com/wp-content/themes/twentynineteen-child/new-images/tab-google-logo.svg"
+                alt=""></span>
           </ng-template>
           <div class="logo_info">
             <h3>Google</h3>

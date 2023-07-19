@@ -41,12 +41,14 @@
 .heading2 {
   color: #fff;
   margin-bottom: 10px;
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 1.1;
   position: relative;
   z-index: 2;
-
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
   @media (min-width: 1200px) {
     font-size: 60px;
   }

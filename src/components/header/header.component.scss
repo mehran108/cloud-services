@@ -610,17 +610,20 @@ nav {
   opacity: 0;
 }
 
-.stky_header.shrink:before {
+.stky_header.header-white:before {
   transform: scaleY(1);
   -webkit-transform: scaleY(1);
   opacity: 1;
+  @media (max-width: 1199px){
+    background-color: #000;
+  }
 }
 
-.shrink nav {
+.header-white nav {
   padding: 10px 0;
 }
 
-.shrink .dropdown-inner {
+.header-white .dropdown-inner {
   margin-top: 12px;
 }
 
@@ -659,20 +662,31 @@ nav {
 
 }
 
-.shrink .menu-wrapper>ul>li>a {
+.header-white .menu-wrapper>ul>li>a {
   color: #000;
 }
 
-.shrink .menu-wrapper>ul>.nav_contact>a {
+.header-white .menu-wrapper>ul>.nav_contact>a {
   color: #fff;
 }
 
-.shrink .appi-blue-blk-logo {
+.header-white .appi-blue-blk-logo {
   display: block;
+  top: -6px;
+  @media (max-width: 1199px){
+    top: auto;
+    display: none;
+  }
+}
+.appi-blue-blk-logo {
+  display: none;
 }
 
-.shrink .appi-blue-wht-logo {
+.header-white .appi-blue-wht-logo {
   display: none;
+  @media (max-width: 1199px){
+    display: block;
+  }
 }
 
 .brand_logo img {
@@ -2147,11 +2161,11 @@ header.stky_header {
   display: none;
 }
 
-.multiple-logo .stky_header.shrink .wht-logo {
+.multiple-logo .stky_header.header-white .wht-logo {
   display: none;
 }
 
-.multiple-logo .stky_header.shrink .blk-logo {
+.multiple-logo .stky_header.header-white .blk-logo {
   display: block;
 }
 
@@ -2159,7 +2173,7 @@ header.stky_header {
   display: none;
 }
 
-.page-template-karvaan .stky_header.shrink .menu-wrapper>ul>li.nav_contact>a {
+.page-template-karvaan .stky_header.header-white .menu-wrapper>ul>li.nav_contact>a {
   color: #fff;
 }
 
