@@ -1277,7 +1277,7 @@
               <li><a>Portfolio</a></li>
               <li><a>Blog</a></li>
               <li class="nav_contact btn_effect">
-                <a>
+                <a (click)="visible = true">
                   <span>Contact</span>
                 </a>
               </li>
@@ -2545,7 +2545,7 @@
           <li><a>Portfolio</a></li>
           <li><a>Blog</a></li>
           <li class="nav_contact btn_effect">
-            <a>
+            <a (click)="visible = true">
               <span>Contact</span>
             </a>
           </li>
@@ -2555,3 +2555,4 @@
     </div>
   </div>
 </header>
+<app-contact-dialog [visible]="visible" (close)="visible = false"></app-contact-dialog>
